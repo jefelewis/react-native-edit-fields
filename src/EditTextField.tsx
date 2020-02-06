@@ -24,6 +24,7 @@ const EditProfileField = (props) => {
         <TextInput
           ref={textInputRef}
           style={styles.fieldText}
+          clearButtonMode="while-editing"
           {...otherProps}
         >
         </TextInput>
@@ -35,14 +36,14 @@ const EditProfileField = (props) => {
 // Styles
 const styles = StyleSheet.create({
   container: {
-    // justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
     width: width - 16,
     height: 55,
     borderColor: '#7D7D7D',
     borderBottomWidth: StyleSheet.hairlineWidth,
-    // marginBottom: 7,
+    marginLeft: 16,
+    marginBottom: 4,
   },
   fieldTitleContainer: {
     width: 120,
