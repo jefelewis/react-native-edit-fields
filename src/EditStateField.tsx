@@ -28,7 +28,7 @@ interface State {
   value: string;
 }
 
-// Screen: Edit State Field
+// Component: Edit State Field
 const EditStateField = (props: Props) => {
   // React Hooks: State
   const [ modalVisible, toggle ] = useState(false);

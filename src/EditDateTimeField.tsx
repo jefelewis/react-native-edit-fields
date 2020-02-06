@@ -14,7 +14,7 @@ interface Props {
   onChange: (date: Date | string) => Date | string | void;
 }
 
-// Screen: Edit Date Time Field
+// Component: Edit Date Time Field
 const EditDateTimeField = (props: Props) => {
   // React Hooks: State
   const [ modalVisible, toggle ] = useState(false);
