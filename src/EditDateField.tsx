@@ -174,7 +174,7 @@ const EditDateField = (props: Props) => {
       </View>
 
       <TouchableOpacity onPress={() => toggleModal()} style={styles.fieldTextContainer}>
-        <Text style={styles.fieldText}>{moment(date).format('MMM Do, YYYY')}</Text>
+        <Text style={styles.fieldText} numberOfLines={1}>{moment(date).format('MMM Do, YYYY')}</Text>
       </TouchableOpacity>
 
       <View>
