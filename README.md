@@ -68,13 +68,8 @@ react-native run-ios
 import React from 'react';
 import { SafeAreaView } from 'react-native';
 import {
-  DateRangePicker,
-  DatePicker,
-  TimePicker,
-  DateTimePicker,
-  ListPicker,
-  StatePicker,
-  StatePickerSmall,
+  EditDateField,
+  EditTextField,
 } from 'react-native-edit-fields';
 
 // React Native App
