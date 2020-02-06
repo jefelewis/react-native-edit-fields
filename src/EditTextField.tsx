@@ -5,8 +5,15 @@ import { Dimensions, StyleSheet, Text, TextInput, View } from 'react-native';
 // Screen Dimensions
 const { height, width } = Dimensions.get('window');
 
+// TypeScript: Types
+interface Props {
+  title: string;
+  ref: React.RefObject<TextInput>;
+  clearButtonMode: 'never' | 'while-editing' | 'unless-editing' | 'always' | undefined;
+}
+
 // Screen: Edit Profile Field
-const EditProfileField = (props: any) => {
+const EditProfileField = (props: Props) => {
 
   // Text Input: Reference
   const textInputRef = React.createRef();
