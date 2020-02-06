@@ -6,7 +6,7 @@ import { Dimensions, StyleSheet, Text, TextInput, View } from 'react-native';
 const { height, width } = Dimensions.get('window');
 
 // Screen: Edit Profile Field
-const EditProfileField = (props) => {
+const EditProfileField = (props: any) => {
 
   // Text Input: Reference
   const textInputRef = React.createRef();
@@ -17,7 +17,7 @@ const EditProfileField = (props) => {
   return (
     <View style={styles.container}>
       <View style={styles.fieldTitleContainer}>
-        <Text style={styles.fieldTitle}>{props.title}</Text>
+        <Text style={styles.fieldTitle} numberOfLines={1}>{props.title}</Text>
       </View>
 
       <View style={styles.fieldTextContainer}>
@@ -46,7 +46,8 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   fieldTitleContainer: {
-    width: 120,
+    width: 123,
+    marginRight: 7,
   },
   fieldTitle: {
     fontFamily: 'System',
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
     color: '#000000',
   },
   fieldTextContainer: {
-    width: width - 120 - 32,
+    width: width - 130 - 32,
     justifyContent: 'flex-end',
   },
   fieldText: {
