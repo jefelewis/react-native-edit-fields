@@ -173,15 +173,19 @@ const EditDateField = (props: Props) => {
         <Text style={styles.fieldTitle}>{props.title === undefined ? 'Date' : props.title}</Text>
       </View>
 
-      <View style={styles.fieldTextContainer}>
+      <TouchableOpacity onPress={() => toggleModal()} style={styles.fieldTextContainer}>
         <Text style={styles.fieldText}>{moment(date).format('MMM Do, YYYY')}</Text>
-      </View>
+      </TouchableOpacity>
 
       <View>
         {androidModalVisible === true ? renderAndroidPicker(): null}
       </View>
 
-      <Modal isVisible={modalVisible} style={styles.modal}>
+      <Modal
+        isVisible={modalVisible}
+        style={styles.modal}
+        backdropOpacity={.30}
+      >
         <View style={styles.modalContainer}>
           <View style={styles.pickerHeaderContainer}>
             <TouchableOpacity
