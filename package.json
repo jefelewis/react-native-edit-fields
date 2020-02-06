@@ -1,7 +1,30 @@
 {
   "name": "react-native-edit-fields",
   "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "description": "React Native edit fields library (Date, time, datetime, list, state)",
+  "repository": "https://github.com/jefelewis/react-native-edit-fields",
+  "author": "Jeff Lewis",
+  "license": "MIT",
   "private": true,
+  "keywords": [
+    "react-native",
+    "component-library",
+    "apple",
+    "ios",
+    "android",
+    "edit",
+    "fields",
+    "text-input",
+    "modal",
+    "picker",
+    "date",
+    "time",
+    "datetime",
+    "list",
+    "state"
+  ],
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -10,8 +33,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@react-native-community/datetimepicker": "^2.2.1",
+    "moment": "^2.24.0",
     "react": "16.9.0",
-    "react-native": "0.61.5"
+    "react-native": "0.61.5",
+    "react-native-modal": "^11.5.3",
+    "react-native-vector-icons": "^6.6.0"
   },
   "devDependencies": {
     "@babel/core": "7.8.4",
@@ -23,7 +50,14 @@
     "metro-react-native-babel-preset": "0.56.4",
     "react-test-renderer": "16.9.0"
   },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
   "jest": {
     "preset": "react-native"
-  }
+  },
+  "files": [
+    "dist/"
+  ]
 }
