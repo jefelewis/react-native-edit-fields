@@ -26,6 +26,7 @@
     "state"
   ],
   "scripts": {
+    "build": "tsc",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
@@ -44,18 +45,36 @@
     "@babel/core": "7.8.4",
     "@babel/runtime": "7.8.4",
     "@react-native-community/eslint-config": "0.0.5",
+    "@types/jest": "^25.1.2",
+    "@types/react": "^16.9.19",
+    "@types/react-native": "^0.61.10",
+    "@types/react-native-vector-icons": "^6.4.5",
+    "@types/react-test-renderer": "^16.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
     "babel-jest": "24.9.0",
     "eslint": "6.8.0",
     "jest": "24.9.0",
     "metro-react-native-babel-preset": "0.56.4",
-    "react-test-renderer": "16.9.0"
+    "react": "16.9.0",
+    "react-native": "0.61.5",
+    "react-test-renderer": "16.9.0",
+    "typescript": "^3.7.5"
   },
   "peerDependencies": {
     "react": "*",
     "react-native": "*"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
   },
   "files": [
     "dist/"
