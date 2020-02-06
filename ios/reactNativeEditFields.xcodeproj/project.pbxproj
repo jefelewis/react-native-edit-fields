@@ -16,10 +16,10 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* reactNativeEditFieldsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* reactNativeEditFieldsTests.m */; };
-		42C7789FCCED65D90D9FFA05 /* libPods-reactNativeEditFields.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9130C6EC9BD1A84F53899D /* libPods-reactNativeEditFields.a */; };
-		CD5EC2A9BA3C2CB6DA75B528 /* libPods-reactNativeEditFields-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7167189E5ED2B24AC73706 /* libPods-reactNativeEditFields-tvOSTests.a */; };
-		D879056DDFF084A8B156CD3E /* libPods-reactNativeEditFields-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E239AB416CD84DC6D29273FF /* libPods-reactNativeEditFields-tvOS.a */; };
-		DBFD622F4C122518705B65C3 /* libPods-reactNativeEditFieldsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B170889F8E3FE68BBF67020 /* libPods-reactNativeEditFieldsTests.a */; };
+		67D5C862F43A9284E65F01ED /* libPods-reactNativeEditFields.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3978668E321FFFF09D174ABD /* libPods-reactNativeEditFields.a */; };
+		8C1235B0B6D21BDF2ECAB5C0 /* libPods-reactNativeEditFields-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C914FFE59F24157F12970097 /* libPods-reactNativeEditFields-tvOSTests.a */; };
+		C419C36DAC72CEFB505CF979 /* libPods-reactNativeEditFields-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D323890A69096398DC0505E3 /* libPods-reactNativeEditFields-tvOS.a */; };
+		C4DCE51F7096D9104A059734 /* libPods-reactNativeEditFieldsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 90BCFCFAAE4B4E20E67DE371 /* libPods-reactNativeEditFieldsTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +44,6 @@
 		00E356EE1AD99517003FC87E /* reactNativeEditFieldsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reactNativeEditFieldsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* reactNativeEditFieldsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reactNativeEditFieldsTests.m; sourceTree = "<group>"; };
-		018010F9BF124997BD43BAEC /* Pods-reactNativeEditFields-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFields-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFields-tvOSTests/Pods-reactNativeEditFields-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* reactNativeEditFields.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reactNativeEditFields.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = reactNativeEditFields/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = reactNativeEditFields/AppDelegate.m; sourceTree = "<group>"; };
@@ -52,21 +51,22 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = reactNativeEditFields/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = reactNativeEditFields/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = reactNativeEditFields/main.m; sourceTree = "<group>"; };
-		2B7167189E5ED2B24AC73706 /* libPods-reactNativeEditFields-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeEditFields-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* reactNativeEditFields-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reactNativeEditFields-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* reactNativeEditFields-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "reactNativeEditFields-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B170889F8E3FE68BBF67020 /* libPods-reactNativeEditFieldsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeEditFieldsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6D279D3512A8760B0AB00E19 /* Pods-reactNativeEditFields-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFields-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFields-tvOS/Pods-reactNativeEditFields-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		A1659FC7482EAC6FB173FF0F /* Pods-reactNativeEditFieldsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFieldsTests.release.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFieldsTests/Pods-reactNativeEditFieldsTests.release.xcconfig"; sourceTree = "<group>"; };
-		A818D09E2495000D538C7807 /* Pods-reactNativeEditFields-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFields-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFields-tvOSTests/Pods-reactNativeEditFields-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		BCCAB97A0E22C0C20C0A53E9 /* Pods-reactNativeEditFields.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFields.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFields/Pods-reactNativeEditFields.debug.xcconfig"; sourceTree = "<group>"; };
-		CC1AABEDF07940A7383D8434 /* Pods-reactNativeEditFields.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFields.release.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFields/Pods-reactNativeEditFields.release.xcconfig"; sourceTree = "<group>"; };
-		E239AB416CD84DC6D29273FF /* libPods-reactNativeEditFields-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeEditFields-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9A4C4222169A05C968E9415 /* Pods-reactNativeEditFieldsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFieldsTests.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFieldsTests/Pods-reactNativeEditFieldsTests.debug.xcconfig"; sourceTree = "<group>"; };
-		EC9130C6EC9BD1A84F53899D /* libPods-reactNativeEditFields.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeEditFields.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3978668E321FFFF09D174ABD /* libPods-reactNativeEditFields.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeEditFields.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		639867895EDE5D4FF541F37C /* Pods-reactNativeEditFields-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFields-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFields-tvOSTests/Pods-reactNativeEditFields-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		63AE926BCC76082623E80528 /* Pods-reactNativeEditFields-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFields-tvOS.release.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFields-tvOS/Pods-reactNativeEditFields-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		7D01D2A51DA4DCABEA59C39C /* Pods-reactNativeEditFields-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFields-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFields-tvOSTests/Pods-reactNativeEditFields-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		86CC65D0AE477547178D716A /* Pods-reactNativeEditFieldsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFieldsTests.release.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFieldsTests/Pods-reactNativeEditFieldsTests.release.xcconfig"; sourceTree = "<group>"; };
+		90BCFCFAAE4B4E20E67DE371 /* libPods-reactNativeEditFieldsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeEditFieldsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93790805865AA3AA33529D2B /* Pods-reactNativeEditFields.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFields.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFields/Pods-reactNativeEditFields.debug.xcconfig"; sourceTree = "<group>"; };
+		B172163B7FE573C6E4F1583A /* Pods-reactNativeEditFields-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFields-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFields-tvOS/Pods-reactNativeEditFields-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		B5CF69DE76281E569B522312 /* Pods-reactNativeEditFieldsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFieldsTests.debug.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFieldsTests/Pods-reactNativeEditFieldsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B7F5C32DA9EE88627376CB56 /* Pods-reactNativeEditFields.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFields.release.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFields/Pods-reactNativeEditFields.release.xcconfig"; sourceTree = "<group>"; };
+		C914FFE59F24157F12970097 /* libPods-reactNativeEditFields-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeEditFields-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D323890A69096398DC0505E3 /* libPods-reactNativeEditFields-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactNativeEditFields-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F887955DD962B4DCBD759FB1 /* Pods-reactNativeEditFields-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactNativeEditFields-tvOS.release.xcconfig"; path = "Target Support Files/Pods-reactNativeEditFields-tvOS/Pods-reactNativeEditFields-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBFD622F4C122518705B65C3 /* libPods-reactNativeEditFieldsTests.a in Frameworks */,
+				C4DCE51F7096D9104A059734 /* libPods-reactNativeEditFieldsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42C7789FCCED65D90D9FFA05 /* libPods-reactNativeEditFields.a in Frameworks */,
+				67D5C862F43A9284E65F01ED /* libPods-reactNativeEditFields.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D879056DDFF084A8B156CD3E /* libPods-reactNativeEditFields-tvOS.a in Frameworks */,
+				C419C36DAC72CEFB505CF979 /* libPods-reactNativeEditFields-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD5EC2A9BA3C2CB6DA75B528 /* libPods-reactNativeEditFields-tvOSTests.a in Frameworks */,
+				8C1235B0B6D21BDF2ECAB5C0 /* libPods-reactNativeEditFields-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,12 +141,28 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				EC9130C6EC9BD1A84F53899D /* libPods-reactNativeEditFields.a */,
-				E239AB416CD84DC6D29273FF /* libPods-reactNativeEditFields-tvOS.a */,
-				2B7167189E5ED2B24AC73706 /* libPods-reactNativeEditFields-tvOSTests.a */,
-				3B170889F8E3FE68BBF67020 /* libPods-reactNativeEditFieldsTests.a */,
+				3978668E321FFFF09D174ABD /* libPods-reactNativeEditFields.a */,
+				D323890A69096398DC0505E3 /* libPods-reactNativeEditFields-tvOS.a */,
+				C914FFE59F24157F12970097 /* libPods-reactNativeEditFields-tvOSTests.a */,
+				90BCFCFAAE4B4E20E67DE371 /* libPods-reactNativeEditFieldsTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5288F8FD551263BC0449DCD7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93790805865AA3AA33529D2B /* Pods-reactNativeEditFields.debug.xcconfig */,
+				B7F5C32DA9EE88627376CB56 /* Pods-reactNativeEditFields.release.xcconfig */,
+				B172163B7FE573C6E4F1583A /* Pods-reactNativeEditFields-tvOS.debug.xcconfig */,
+				63AE926BCC76082623E80528 /* Pods-reactNativeEditFields-tvOS.release.xcconfig */,
+				7D01D2A51DA4DCABEA59C39C /* Pods-reactNativeEditFields-tvOSTests.debug.xcconfig */,
+				639867895EDE5D4FF541F37C /* Pods-reactNativeEditFields-tvOSTests.release.xcconfig */,
+				B5CF69DE76281E569B522312 /* Pods-reactNativeEditFieldsTests.debug.xcconfig */,
+				86CC65D0AE477547178D716A /* Pods-reactNativeEditFieldsTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -164,7 +180,7 @@
 				00E356EF1AD99517003FC87E /* reactNativeEditFieldsTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				A509FB37FF5740AF92212BB4 /* Pods */,
+				5288F8FD551263BC0449DCD7 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -182,22 +198,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A509FB37FF5740AF92212BB4 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BCCAB97A0E22C0C20C0A53E9 /* Pods-reactNativeEditFields.debug.xcconfig */,
-				CC1AABEDF07940A7383D8434 /* Pods-reactNativeEditFields.release.xcconfig */,
-				6D279D3512A8760B0AB00E19 /* Pods-reactNativeEditFields-tvOS.debug.xcconfig */,
-				F887955DD962B4DCBD759FB1 /* Pods-reactNativeEditFields-tvOS.release.xcconfig */,
-				018010F9BF124997BD43BAEC /* Pods-reactNativeEditFields-tvOSTests.debug.xcconfig */,
-				A818D09E2495000D538C7807 /* Pods-reactNativeEditFields-tvOSTests.release.xcconfig */,
-				E9A4C4222169A05C968E9415 /* Pods-reactNativeEditFieldsTests.debug.xcconfig */,
-				A1659FC7482EAC6FB173FF0F /* Pods-reactNativeEditFieldsTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -205,7 +205,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "reactNativeEditFieldsTests" */;
 			buildPhases = (
-				D6C7A48A916860939CF100BB /* [CP] Check Pods Manifest.lock */,
+				BBB455276D836AA724D61277 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -224,13 +224,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "reactNativeEditFields" */;
 			buildPhases = (
-				328E7EAB88611391D90DAA89 /* [CP] Check Pods Manifest.lock */,
+				18EFA2513D51B096CCFC804F /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				698E94AD10312E623AE78AA2 /* [CP] Copy Pods Resources */,
+				34F4A82DF1D963752E264518 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -245,7 +245,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "reactNativeEditFields-tvOS" */;
 			buildPhases = (
-				5D87AB91529A95359A00C375 /* [CP] Check Pods Manifest.lock */,
+				4CA9137531E8152C2994A3ED /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -265,7 +265,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "reactNativeEditFields-tvOSTests" */;
 			buildPhases = (
-				FAB28DD31AFD1F6FCE3B1E81 /* [CP] Check Pods Manifest.lock */,
+				9E918461DAA032BC4F39EB3E /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -374,21 +374,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native Code And Images";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
-		};
-		328E7EAB88611391D90DAA89 /* [CP] Check Pods Manifest.lock */ = {
+		18EFA2513D51B096CCFC804F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -410,29 +396,21 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5D87AB91529A95359A00C375 /* [CP] Check Pods Manifest.lock */ = {
+		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
+			name = "Bundle React Native Code And Images";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-reactNativeEditFields-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		698E94AD10312E623AE78AA2 /* [CP] Copy Pods Resources */ = {
+		34F4A82DF1D963752E264518 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -480,7 +458,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reactNativeEditFields/Pods-reactNativeEditFields-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D6C7A48A916860939CF100BB /* [CP] Check Pods Manifest.lock */ = {
+		4CA9137531E8152C2994A3ED /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -495,14 +473,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-reactNativeEditFieldsTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-reactNativeEditFields-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FAB28DD31AFD1F6FCE3B1E81 /* [CP] Check Pods Manifest.lock */ = {
+		9E918461DAA032BC4F39EB3E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -518,6 +496,28 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-reactNativeEditFields-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBB455276D836AA724D61277 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-reactNativeEditFieldsTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -629,7 +629,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E9A4C4222169A05C968E9415 /* Pods-reactNativeEditFieldsTests.debug.xcconfig */;
+			baseConfigurationReference = B5CF69DE76281E569B522312 /* Pods-reactNativeEditFieldsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -652,7 +652,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1659FC7482EAC6FB173FF0F /* Pods-reactNativeEditFieldsTests.release.xcconfig */;
+			baseConfigurationReference = 86CC65D0AE477547178D716A /* Pods-reactNativeEditFieldsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -672,7 +672,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BCCAB97A0E22C0C20C0A53E9 /* Pods-reactNativeEditFields.debug.xcconfig */;
+			baseConfigurationReference = 93790805865AA3AA33529D2B /* Pods-reactNativeEditFields.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -692,7 +692,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CC1AABEDF07940A7383D8434 /* Pods-reactNativeEditFields.release.xcconfig */;
+			baseConfigurationReference = B7F5C32DA9EE88627376CB56 /* Pods-reactNativeEditFields.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -711,7 +711,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D279D3512A8760B0AB00E19 /* Pods-reactNativeEditFields-tvOS.debug.xcconfig */;
+			baseConfigurationReference = B172163B7FE573C6E4F1583A /* Pods-reactNativeEditFields-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -739,7 +739,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F887955DD962B4DCBD759FB1 /* Pods-reactNativeEditFields-tvOS.release.xcconfig */;
+			baseConfigurationReference = 63AE926BCC76082623E80528 /* Pods-reactNativeEditFields-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -767,7 +767,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 018010F9BF124997BD43BAEC /* Pods-reactNativeEditFields-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 7D01D2A51DA4DCABEA59C39C /* Pods-reactNativeEditFields-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -794,7 +794,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A818D09E2495000D538C7807 /* Pods-reactNativeEditFields-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 639867895EDE5D4FF541F37C /* Pods-reactNativeEditFields-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
