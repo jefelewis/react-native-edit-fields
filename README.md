@@ -63,20 +63,29 @@ react-native run-ios
 
 
 ## Example Code
+**Functional Component (Using React Hooks):**
+
 ```javascript
 // Imports: Dependencies
 import React from 'react';
 import { SafeAreaView } from 'react-native';
+
+// Imports: Components
 import {
-  EditDateField,
   EditTextField,
-} from 'react-native-edit-fields';
+  EditDateField,
+  EditDateTimeField,
+  EditTimeField,
+  EditDateRangeField,
+  EditStateField,
+  EditListField,
+} from './src/index';
 
 // React Native App
 const App = () => {
 
   // Test Data
-  const items = [
+  const items: any = [
     { label: '1', value: '1' },
     { label: '2', value: '2' },
     { label: '3', value: '3' },
@@ -91,10 +100,60 @@ const App = () => {
 
   return (
     <SafeAreaView style={{ display: 'flex', flex: 1 }}>
+      <EditTextField
+        title="Text"
+        currentValue={'Current Text'}
+        newValue={(text: string | number) => console.log(text)}
+      />
 
+      <EditDateField
+        title="Date"
+        mode="spinner"
+        currentValue={new Date()}
+        newValue={(newDate: Date) => console.log(newDate)}
+      />
+
+      <EditDateTimeField
+        title="Date/Time"
+        currentValue={new Date()}
+        newValue={(newDate: Date) => console.log(newDate)}
+      />
+
+      <EditTimeField
+        title="Time"
+        mode="spinner"
+        currentValue={new Date()}
+        newValue={(newDate: Date) => console.log(newDate)}
+      />
+
+      <EditStateField
+        title="State"
+        currentValue={'CA'}
+        newValue={(state: string) => console.log(state)}
+      />
+
+      <EditListField
+        title="List"
+        items={items}
+        currentValue={'1'}
+        newValue={(item: any) => console.log(item)}
+      />
+
+      <EditDateRangeField
+        toTitle="To Date"
+        fromTitle="From Date"
+        currentToValue={new Date()}
+        newToValue={(date: Date) => console.log(date)}
+        currentFromValue={new Date()}
+        newFromValue={(date: Date) => console.log(date)}
+        mode="spinner"
+      />
     </SafeAreaView>
   )
 };
+
+// Exports
+export default App;
 ```
 
 <!-- ## Picker Types (iOS)
