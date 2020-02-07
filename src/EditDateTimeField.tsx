@@ -11,7 +11,8 @@ const { height, width } = Dimensions.get('window');
 // TypeScript: Types
 interface Props {
   title?: string;
-  onChange: (date: Date | string) => Date | string | void;
+  currentValue: Date;
+  newValue: (date: Date) => Date | void;
 }
 
 // Component: Edit Date Time Field
@@ -20,19 +21,6 @@ const EditDateTimeField = (props: Props) => {
   const [ modalVisible, toggle ] = useState(false);
   const [ date, setDate ] = useState(new Date());
   const [ tempDate, setTempDate ] = useState(date);
-  const [ today , todaySent ] = useState(false);
-
-  // React Hooks: Lifecycle Methods
-  useEffect(() => {
-    // Send Initial Date
-    if (today === false) {
-      // Props: onFromChange
-      props.onChange(new Date());
-
-      // Today's Date Has Been Sent To Parent Component
-      todaySent(true);
-    }
-  });
 
   // Toggle Modal
   const toggleModal = () => {
@@ -95,8 +83,8 @@ const EditDateTimeField = (props: Props) => {
       // React Hook: Set Date
       setDate(tempDate);
 
-      // Props: onChange
-      props.onChange(tempDate);
+      // Props: newValue
+      props.newValue(tempDate);
 
       // Toggle Modal
       toggleModal();
