@@ -1,6 +1,6 @@
 {
   "name": "react-native-edit-fields",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "description": "React Native edit fields library (Text, date, time, datetime, date range, list, state)",
