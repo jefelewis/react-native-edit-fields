@@ -5,6 +5,12 @@ import { SafeAreaView } from 'react-native';
 // Imports: Components
 import {
   EditTextField,
+  EditDateField,
+  EditDateTimeField,
+  EditTimeField,
+  EditDateRangeField,
+  EditStateField,
+  EditListField,
 } from './src/index';
 
 // React Native App
@@ -27,17 +33,45 @@ const App = () => {
   return (
     <SafeAreaView style={{ display: 'flex', flex: 1 }}>
       <EditTextField
-        title="Text Field"
+        title="Text"
+        // handleChange={(text: string) => console.log(text)}
       />
 
-      <EditTextField
-        title="Text Field"
+      <EditDateField
+        title="Date"
+        onChange={(date) => console.log(date)}
+        mode="spinner"
       />
 
-      <EditTextField
-        title="Text Field"
+      <EditDateTimeField
+        title="Date/Time"
+        onChange={(date) => console.log(date)}
       />
 
+      <EditTimeField
+        title="Time"
+        onChange={(date) => console.log(date)}
+        mode="spinner"
+      />
+
+      <EditStateField
+        title="State"
+        onChange={(state) => console.log(state)}
+      />
+
+      <EditListField
+        title="List"
+        items={items}
+        onChange={(item) => console.log(item)}
+      />
+
+      <EditDateRangeField
+        toTitle="To Date"
+        fromTitle="From Date"
+        onFromChange={(date) => console.log(date)}
+        onToChange={(date) => console.log(date)}
+        mode="spinner"
+      />
     </SafeAreaView>
   )
 };
