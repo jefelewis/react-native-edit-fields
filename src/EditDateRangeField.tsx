@@ -307,7 +307,7 @@ const EditDateRangeField = (props: Props) => {
     <View>
       <View style={styles.container}>
         <View style={styles.fieldTitleContainer}>
-          <Text style={styles.fieldTitle} numberOfLines={1}>{props.toTitle === undefined ? 'Date' : props.toTitle}</Text>
+          <Text style={styles.fieldTitle} numberOfLines={1}>{props.toTitle === undefined ? 'To Date' : props.toTitle}</Text>
         </View>
 
         <TouchableOpacity onPress={() => toggleFromDateModal()} style={styles.fieldTextContainer}>
@@ -343,7 +343,7 @@ const EditDateRangeField = (props: Props) => {
 
       <View style={styles.container}>
         <View style={styles.fieldTitleContainer}>
-          <Text style={styles.fieldTitle} numberOfLines={1}>{props.fromTitle === undefined ? 'Date' : props.fromTitle}</Text>
+          <Text style={styles.fieldTitle} numberOfLines={1}>{props.fromTitle === undefined ? 'From Date' : props.fromTitle}</Text>
         </View>
 
         <TouchableOpacity onPress={() => toggleToDateModal()} style={styles.fieldTextContainer}>
