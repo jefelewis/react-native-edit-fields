@@ -7,7 +7,6 @@
   "repository": "https://github.com/jefelewis/react-native-edit-fields",
   "author": "Jeff Lewis",
   "license": "MIT",
-  "private": true,
   "keywords": [
     "react-native",
     "component-library",
