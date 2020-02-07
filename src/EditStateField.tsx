@@ -222,9 +222,7 @@ const EditStateField = (props: Props) => {
                   </View>
                 </View>
       
-                <View style={styles.pickerContainer}>
-                  {renderIOSPicker()}
-                </View>
+                <View style={styles.pickerContainer}>{renderIOSPicker()}</View>
               </View>
             </Modal>
           </View>
@@ -265,9 +263,7 @@ const EditStateField = (props: Props) => {
   };
 
   return (
-    <View>
-      {renderPlatform()}
-    </View>
+    <View>{renderPlatform()}</View>
   )
 };
 
@@ -315,7 +311,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    height: 40,
+    height: 45,
     width: width,
     backgroundColor: '#FAFAF8',
     borderColor: '#7D7D7D',

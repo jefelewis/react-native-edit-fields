@@ -102,7 +102,7 @@ const EditDateTimeField = (props: Props) => {
         return (
           <View style={styles.container}>
             <View style={styles.fieldTitleContainer}>
-            <Text style={styles.fieldTitle} numberOfLines={1}>{props.title === undefined ? 'Date/Time' : props.title}</Text>
+              <Text style={styles.fieldTitle} numberOfLines={1}>{props.title === undefined ? 'Date/Time' : props.title}</Text>
             </View>
 
             <TouchableOpacity onPress={() => toggleModal()} style={styles.fieldTextContainer}>
@@ -129,9 +129,7 @@ const EditDateTimeField = (props: Props) => {
                   </View>
                 </View>
 
-                <View style={styles.pickerContainer}>
-                  {renderIOSPicker()}
-                </View>
+                <View style={styles.pickerContainer}>{renderIOSPicker()}</View>
               </View>
             </Modal>
           </View>
@@ -149,9 +147,7 @@ const EditDateTimeField = (props: Props) => {
   };
 
   return (
-    <View>
-      {renderPlatform()}
-    </View>
+    <View>{renderPlatform()}</View>
   )
 };
 
@@ -199,7 +195,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    height: 40,
+    height: 45,
     width: width,
     backgroundColor: '#FAFAF8',
     borderColor: '#7D7D7D',

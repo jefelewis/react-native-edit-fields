@@ -162,9 +162,7 @@ const EditTimeField = (props: Props) => {
         <Text style={styles.fieldText} numberOfLines={1}>{moment(date).format('h:mm a')}</Text>
       </TouchableOpacity>
 
-      <View>
-        {androidModalVisible === true ? renderAndroidPicker(): null}
-      </View>
+      <View>{androidModalVisible === true ? renderAndroidPicker(): null}</View>
 
       <Modal
         isVisible={modalVisible}
@@ -187,9 +185,7 @@ const EditTimeField = (props: Props) => {
             </View>
           </View>
 
-          <View style={styles.pickerContainer}>
-            {renderIOSPicker()}
-          </View>
+          <View style={styles.pickerContainer}>{renderIOSPicker()}</View>
         </View>
       </Modal>
     </View>
@@ -240,7 +236,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    height: 40,
+    height: 45,
     width: width,
     backgroundColor: '#FAFAF8',
     borderColor: '#7D7D7D',
