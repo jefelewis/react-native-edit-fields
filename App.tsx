@@ -34,7 +34,8 @@ const App = () => {
     <SafeAreaView style={{ display: 'flex', flex: 1 }}>
       <EditTextField
         title="Text"
-        // handleChange={(text: string) => console.log(text)}
+        currentValue={'Current Text'}
+        newValue={(text: string | number) => console.log(text)}
       />
 
       <EditDateField
