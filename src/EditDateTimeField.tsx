@@ -39,7 +39,7 @@ const EditDateTimeField = (props: Props) => {
   // Select Date
   const selectDate = (event: any, newDate: Date) => {
     try {
-      // React Hook: Set Temp State
+      // React Hook: Set Temp Date
       setTempDate(newDate);
     }
     catch (error) {
