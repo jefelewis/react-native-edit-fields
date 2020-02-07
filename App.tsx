@@ -45,16 +45,18 @@ const App = () => {
         newValue={(newDate: Date) => console.log(newDate)}
       />
 
-      {/* <EditDateTimeField
+      <EditDateTimeField
         title="Date/Time"
-        onChange={(date) => console.log(date)}
-      /> */}
+        currentValue={new Date()}
+        newValue={(newDate: Date) => console.log(newDate)}
+      />
 
-      {/* <EditTimeField
+      <EditTimeField
         title="Time"
-        onChange={(date) => console.log(date)}
         mode="spinner"
-      /> */}
+        currentValue={new Date()}
+        newValue={(newDate: Date) => console.log(newDate)}
+      />
 
       <EditStateField
         title="State"
@@ -69,13 +71,15 @@ const App = () => {
         newValue={(item: any) => console.log(item)}
       />
 
-      {/* <EditDateRangeField
+      <EditDateRangeField
         toTitle="To Date"
         fromTitle="From Date"
-        onFromChange={(date) => console.log(date)}
-        onToChange={(date) => console.log(date)}
+        currentToValue={new Date()}
+        newToValue={(date: Date) => console.log(date)}
+        currentFromValue={new Date()}
+        newFromValue={(date: Date) => console.log(date)}
         mode="spinner"
-      /> */}
+      />
     </SafeAreaView>
   )
 };
