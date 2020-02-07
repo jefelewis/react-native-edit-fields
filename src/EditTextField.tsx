@@ -27,7 +27,7 @@ const EditProfileField = (props: Props) => {
       props.newValue(text);
     }
     catch (error) {
-      console.log(error)
+      console.log(error);
     }
   };
 
