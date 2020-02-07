@@ -12,7 +12,8 @@ const { height, width } = Dimensions.get('window');
 interface Props {
   title?: string;
   mode: 'calendar' | 'spinner' | 'default';
-  onChange: (date: Date | string) => Date | string | void;
+  currentValue: Date;
+  newValue: (date: Date) => Date | void;
 }
 
 // Component: Edit Date Field
@@ -20,21 +21,8 @@ const EditDateField = (props: Props) => {
   // React Hooks: State
   const [ modalVisible, toggle ] = useState(false);
   const [ androidModalVisible, toggleAndroid ] = useState(false);
-  const [ date, setDate ] = useState(new Date());
+  const [ date, setDate ] = useState(props.currentValue);
   const [ tempDate, setTempDate ] = useState(date);
-  const [ today, todaySent ] = useState(false);
-
-  // React Hooks: Lifecycle Methods
-  useEffect(() => {
-    // Send Initial Date
-    if (today === false) {
-      // Props: onFromChange
-      props.onChange(new Date());
-
-      // Today's Date Has Been Sent To Parent Component
-      todaySent(true);
-    }
-  });
 
   // Toggle Modal
   const toggleModal = () => {
@@ -76,8 +64,8 @@ const EditDateField = (props: Props) => {
           // React Hook: Set From Date
           setDate(newDate);
 
-          // React Props: onChange
-          props.onChange(newDate);
+          // Props: newValue
+          props.newValue(tempDate);
         }
 
         // Event Type: Dismissed
@@ -91,7 +79,7 @@ const EditDateField = (props: Props) => {
       else if (Platform.OS === 'ios') {
         // Undefined
         if (newDate !== undefined) {
-          // React Hook: Set Temp State
+          // React Hook: Set Temp Date
           setTempDate(newDate);
         }
       }
@@ -137,8 +125,8 @@ const EditDateField = (props: Props) => {
       // React Hook: Set Date
       setDate(tempDate);
 
-      // Props: onChange
-      props.onChange(tempDate);
+      // Props: newValue
+      props.newValue(tempDate);
 
       // Toggle Modal
       toggleModal();
