@@ -19,7 +19,7 @@ interface Props {
 const EditDateTimeField = (props: Props) => {
   // React Hooks: State
   const [ modalVisible, toggle ] = useState(false);
-  const [ date, setDate ] = useState(new Date());
+  const [ date, setDate ] = useState(props.currentValue);
   const [ tempDate, setTempDate ] = useState(date);
 
   // Toggle Modal

@@ -12,7 +12,8 @@ const { height, width } = Dimensions.get('window');
 interface Props {
   title?: string;
   mode: 'spinner' | 'default' | 'clock';
-  onChange: (date: Date | string) => Date | string | void;
+  currentValue: Date;
+  newValue: (date: Date) => Date | void;
 }
 
 // Component: Edit Time Field
@@ -20,21 +21,8 @@ const EditTimeField = (props: Props) => {
   // React Hooks: State
   const [ modalVisible, toggle ] = useState(false);
   const [ androidModalVisible, toggleAndroid ] = useState(false);
-  const [ date, setDate ] = useState(new Date());
+  const [ date, setDate ] = useState(props.currentValue);
   const [ tempDate, setTempDate ] = useState(date);
-  const [ today , todaySent ] = useState(false);
-
-  // React Hooks: Lifecycle Methods
-  useEffect(() => {
-    // Send Initial Date
-    if (today === false) {
-      // Props: onFromChange
-      props.onChange(new Date());
-
-      // Today's Date Has Been Sent To Parent Component
-      todaySent(true);
-    }
-  });
 
   // Toggle Modal
   const toggleModal = () => {
@@ -76,8 +64,8 @@ const EditTimeField = (props: Props) => {
           // React Hook: Set From Date
           setDate(newDate);
 
-          // React Props: onChange
-          props.onChange(newDate);
+          // React Props: newValue
+          props.newValue(newDate);
         }
 
         // Event Type: Dismissed
@@ -134,8 +122,8 @@ const EditTimeField = (props: Props) => {
       // React Hook: Set Date
       setDate(tempDate);
 
-      // Props: onChange
-      props.onChange(tempDate);
+      // Props: newValue
+      props.newValue(tempDate);
 
       // Toggle Modal
       toggleModal();

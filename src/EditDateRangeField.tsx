@@ -13,8 +13,10 @@ interface Props {
   toTitle?: string;
   fromTitle?: string;
   mode: 'calendar' | 'spinner' | 'default';
-  onFromChange: (newDate: Date | string) => Date | string | void;
-  onToChange: (newDate: Date | string) => Date | string | void;
+  currentToValue: Date;
+  currentFromValue: Date;
+  newToValue: (newDate: Date) => Date | void;
+  newFromValue: (newDate: Date) => Date | void;
   }
 
 // Component: Edit Date Range Field
@@ -24,23 +26,10 @@ const EditDateRangeField = (props: Props) => {
   const [ toDateModalVisible, toggleToDate ] = useState(false);
   const [ androidFromDateVisible, toggleFromDateAndroid ] = useState(false);
   const [ androidToDateVisible, toggleToDateAndroid ] = useState(false);
-  const [ fromDate, setFromDate ] = useState(new Date());
-  const [ toDate, setToDate ] = useState(new Date());
+  const [ fromDate, setFromDate ] = useState(props.currentFromValue);
+  const [ toDate, setToDate ] = useState(props.currentToValue);
   const [ tempToDate, setTempToDate ] = useState(toDate);
   const [ tempFromDate, setTempFromDate ] = useState(fromDate);
-  const [ today, todaySent ] = useState(false);
-
-  // React Hooks: Lifecycle Methods
-  useEffect(() => {
-    // Send Initial Date
-    if (today === false) {
-      // Props: onFromChange
-      props.onFromChange(new Date());
-
-      // Today's Date Has Been Sent To Parent Component
-      todaySent(true);
-    }
-  });
 
   // Toggle From Date Modal
   const toggleFromDateModal = () => {
@@ -102,7 +91,7 @@ const EditDateRangeField = (props: Props) => {
           setFromDate(newDate);
   
           // React Props: onChange
-          props.onFromChange(newDate);
+          props.newToValue(newDate);
         }
   
         // Event Type: Dismissed
@@ -146,7 +135,7 @@ const EditDateRangeField = (props: Props) => {
           setToDate(newDate);
   
           // React Props: onChange
-          props.onToChange(newDate);
+          props.newFromValue(newDate);
         }
   
         // Event Type: Dismissed
@@ -207,7 +196,7 @@ const EditDateRangeField = (props: Props) => {
       setFromDate(tempFromDate);
 
       // Props: onChange
-      props.onFromChange(tempFromDate);
+      props.newToValue(tempFromDate);
 
       // Toggle Modal
       toggleFromDateModal();
@@ -254,7 +243,7 @@ const EditDateRangeField = (props: Props) => {
       setToDate(tempToDate);
 
       // Props: onChange
-      props.onToChange(tempToDate);
+      props.newFromValue(tempToDate);
 
       // Toggle Modal
       toggleToDateModal();
