@@ -170,3 +170,10 @@ export default App;
 
 
 ## Changelog
+
+### [0.0.3] - 2/7/2020
+
+***Changed***
+
+- Increased `TouchableOpacity` size for `DateRangePicker`.
+- Increased `pickerHeaderContainer` height to 45px.
