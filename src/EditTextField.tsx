@@ -8,23 +8,33 @@ const { height, width } = Dimensions.get('window');
 // TypeScript: Types
 interface Props {
   title: string;
-  ref: React.RefObject<TextInput>;
-  clearButtonMode: 'never' | 'while-editing' | 'unless-editing' | 'always' | undefined;
+  currentValue: string;
+  newValue: (text: string | number) => string | number | void;
 }
 
-// Screen: Edit Profile Field
+// Component: Edit Profile Field
 const EditProfileField = (props: Props) => {
 
   // Text Input: Reference
-  const textInputRef = React.createRef();
+  const textInputRef: React.RefObject<TextInput> = React.createRef();
 
   // Props
-  const { ...otherProps } = props;
+  const { title, ...otherProps } = props;
+
+  // Handle Change
+  const handleChange = (text: string | number) => {
+    try {
+      props.newValue(text);
+    }
+    catch (error) {
+      console.log()
+    }
+  };
 
   return (
     <View style={styles.container}>
       <View style={styles.fieldTitleContainer}>
-        <Text style={styles.fieldTitle} numberOfLines={1}>{props.title}</Text>
+        <Text style={styles.fieldTitle} numberOfLines={1}>{title}</Text>
       </View>
 
       <View style={styles.fieldTextContainer}>
@@ -32,8 +42,10 @@ const EditProfileField = (props: Props) => {
           ref={textInputRef}
           style={styles.fieldText}
           clearButtonMode="while-editing"
+          onChangeText={handleChange}
           {...otherProps}
         >
+          {props.currentValue}
         </TextInput>
       </View>
     </View>
@@ -53,8 +65,7 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   fieldTitleContainer: {
-    width: 123,
-    marginRight: 7,
+    width: 120,
   },
   fieldTitle: {
     fontFamily: 'System',
