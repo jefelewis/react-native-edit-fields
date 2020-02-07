@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "description": "React Native edit fields library (Date, time, datetime, list, state)",
+  "description": "React Native edit fields library (Text, date, time, datetime, date range, list, state)",
   "repository": "https://github.com/jefelewis/react-native-edit-fields",
   "author": "Jeff Lewis",
   "license": "MIT",
