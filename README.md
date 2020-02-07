@@ -79,7 +79,7 @@ import {
   EditDateRangeField,
   EditStateField,
   EditListField,
-} from './src/index';
+} from 'react-native-edit-fields';
 
 // React Native App
 const App = () => {
