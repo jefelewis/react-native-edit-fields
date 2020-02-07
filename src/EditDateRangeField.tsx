@@ -28,7 +28,7 @@ const EditDateRangeField = (props: Props) => {
   const [ toDate, setToDate ] = useState(new Date());
   const [ tempToDate, setTempToDate ] = useState(toDate);
   const [ tempFromDate, setTempFromDate ] = useState(fromDate);
-  const [ today , todaySent ] = useState(false);
+  const [ today, todaySent ] = useState(false);
 
   // React Hooks: Lifecycle Methods
   useEffect(() => {
