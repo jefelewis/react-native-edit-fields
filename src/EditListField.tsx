@@ -10,7 +10,8 @@ const { height, width } = Dimensions.get('window');
 interface Props {
   title?: string;
   items: Array<Item>;
-  onChange: (item: any) => any;
+  currentValue: string;
+  newValue: (item: any) => any;
 }
 
 interface Item {
@@ -54,8 +55,8 @@ const EditListField = (props: Props) => {
         // React Hook: Set Item
         setItem(item);
 
-        // React Props: onChange
-        props.onChange(item);
+        // React Props: newValue
+        props.newValue(item);
       }
     }
     catch (error) {
@@ -107,8 +108,8 @@ const EditListField = (props: Props) => {
       // React Hook: Set Item
       setItem(tempItem);
 
-      // Props: onChange
-      props.onChange(tempItem);
+      // Props: newValue
+      props.newValue(tempItem);
 
       // Toggle Modal
       toggleModal();
@@ -130,7 +131,7 @@ const EditListField = (props: Props) => {
             </View>
 
             <TouchableOpacity onPress={() => toggleModal()} style={styles.fieldTextContainer}>
-              <Text style={styles.fieldText} numberOfLines={1}>{item !== undefined ? item : 'Select'}</Text>
+              <Text style={styles.fieldText} numberOfLines={1}>{item !== undefined ? item : props.currentValue}</Text>
             </TouchableOpacity>
 
             <Modal
