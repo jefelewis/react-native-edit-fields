@@ -8,9 +8,10 @@ const { height, width } = Dimensions.get('window');
 
 // TypeScript: Types
 interface Props {
-    title?: string;
-    onChange: (state: any) => any;
-  }
+  title?: string;
+  currentValue: string;
+  newValue: (state: string) => string | void;
+}
   
 interface Item {
   label: string;
@@ -122,8 +123,8 @@ const EditStateField = (props: Props) => {
         // React Hook: Set State
         setState(value);
   
-        // React Props: onChange
-        props.onChange(value);
+        // React Props: newValue
+        props.newValue(value);
       }
     }
     catch (error) {
@@ -175,8 +176,8 @@ const EditStateField = (props: Props) => {
       // React Hook: Set State
       setState(tempState);
 
-      // Props: onChange
-      props.onChange(tempState);
+      // Props: newValue
+      props.newValue(tempState);
 
       // Toggle Modal
       toggleModal();
@@ -198,7 +199,7 @@ const EditStateField = (props: Props) => {
             </View>
       
             <TouchableOpacity onPress={() => toggleModal()} style={styles.fieldTextContainer}>
-              <Text style={styles.fieldText}>{state !== undefined ? state : 'Select'}</Text>
+              <Text style={styles.fieldText}>{state !== undefined ? state : props.currentValue}</Text>
             </TouchableOpacity>
       
             <Modal
