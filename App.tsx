@@ -17,7 +17,7 @@ import {
 const App = () => {
 
   // Test Data
-  const items = [
+  const items: any = [
     { label: '1', value: '1' },
     { label: '2', value: '2' },
     { label: '3', value: '3' },
@@ -40,39 +40,42 @@ const App = () => {
 
       <EditDateField
         title="Date"
-        onChange={(date) => console.log(date)}
         mode="spinner"
+        currentValue={new Date()}
+        newValue={(newDate: Date) => console.log(newDate)}
       />
 
-      <EditDateTimeField
+      {/* <EditDateTimeField
         title="Date/Time"
         onChange={(date) => console.log(date)}
-      />
+      /> */}
 
-      <EditTimeField
+      {/* <EditTimeField
         title="Time"
         onChange={(date) => console.log(date)}
         mode="spinner"
-      />
+      /> */}
 
       <EditStateField
         title="State"
-        onChange={(state) => console.log(state)}
+        currentValue={'CA'}
+        newValue={(state: string) => console.log(state)}
       />
 
       <EditListField
         title="List"
         items={items}
-        onChange={(item) => console.log(item)}
+        currentValue={'1'}
+        newValue={(item: any) => console.log(item)}
       />
 
-      <EditDateRangeField
+      {/* <EditDateRangeField
         toTitle="To Date"
         fromTitle="From Date"
         onFromChange={(date) => console.log(date)}
         onToChange={(date) => console.log(date)}
         mode="spinner"
-      />
+      /> */}
     </SafeAreaView>
   )
 };
